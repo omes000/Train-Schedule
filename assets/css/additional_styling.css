@@ -1,0 +1,101 @@
+ html{
+
+}
+
+
+
+td{
+    text-align: center;
+}
+
+#header-panel{
+    background-color: black;
+    color: white;
+}
+
+#currEmp,#addEmp{
+    background-color: #4285F4;
+    color: white;
+}
+
+
+}
+
+#form-container{
+    position: relative;
+}
+
+#add-gif{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#gif-input{
+    color: black;
+}
+
+.gap-top{
+    margin-top: 20px;
+}
+
+.gap-right{
+    margin-right:10px;
+}
+
+.gap-bottom{
+
+}
+
+.gap-left{
+    margin-left: 10px;
+}
+
+.gif{
+    xalign-self:center;
+}
+
+#gifs{
+    xdisplay: flex;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+
+}
+ 
+.btn-primary {
+    background-color: red;
+    border-color: #080A30;
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #18BC2F;
+    border-color: #080A30;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus{
+    background-color: #FF998F;
+    border-color: white;
+}
+
+.btn-success:hover, .btn-success:focus{
+    background-color: #98e698;
+    border-color: white;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background-color: #A11607 !important;
+    box-shadow: none;
+    border-color: white !important;
+}
+
+.btn-success:active, .btn-success.active {
+    background-color: #98e698 !important;
+    box-shadow: none;
+    border-color: white !important;
+}
+th{
+    font-weight: bold;
+    text-align: center;
+}
