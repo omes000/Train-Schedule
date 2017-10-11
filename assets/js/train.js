@@ -18,16 +18,12 @@ $("#add-train").on("click", function(event){
 	var freq = $("#freq-input").val().trim(); //get the frequency of train arrivals from user input
 	var firstTime = moment($("#first-time").val().trim(), "hh:mm a"); //get the first arrival of train and convert to a time
 	var diff = "";
-	//var diff = firstTime.diff(currTime, 'minutes'); //calculate the difference in minutes between current time and first arrival time
+	var diff = firstTime.diff(currTime, 'minutes'); //calculate the difference in minutes between current time and first arrival time
 	var numArrivals = 0; //holds the number of arrivals between first arrival time and current time
 	var minSinceFirstTime = 0; //holds the number of minutes that has transpired between first arrival time and most recent train arrival time
 	var mostRecentArrival = ""; //holds the time for the most recent train arrival
 	var minToNextArrival = 0; //holds the minutes until the next train arrival
 	var timeNextArrival = ""; //holds the time of the next train arrival
-
-	function(currTime, firstTime, freq){
-		diff = firstTime.diff(currTime, 'minutes');
-	}
 	
 	/*special case for when the current time is before the first train time, set next arrival time equal to the first train time and the minutes to next arrival equal to the difference between the current time and the first train time*/
 	if(diff > 0){
